@@ -1,9 +1,10 @@
 import wollok.game.*
-import  cultivos.*
+import cultivos.*
 
 object hector {
 	var property position = new Position(x = 3, y = 3)
 	const property image = "player.png"
+
 
 	method sembrarMaiz() {
 	 return game.addVisual(new Maiz())
@@ -15,5 +16,9 @@ object hector {
 
 	method sembrarTomaco() {
 	  return game.addVisual(new Tomaco())
+	}
+	
+	method regar(){
+		
 	}
 }
