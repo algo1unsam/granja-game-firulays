@@ -10,13 +10,7 @@ object hector {
 	 return game.addVisual(new Maiz())
 	}
 
-	method sembrarTrigo() {
-	 return game.addVisual(new Trigo())
-	}
-
-	method sembrarTomaco() {
-	  return game.addVisual(new Tomaco())
-	}
+	
 	
 	method regar(){
 		

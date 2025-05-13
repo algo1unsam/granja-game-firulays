@@ -8,10 +8,15 @@ program farmville {
 	game.height(10)
 	game.width(10)
 	game.ground("ground.png")
+	
+	
 
 	//  VISUALES
+	keyboard.m().onPressDo({hector.sembrarMaiz()})
+	//keyboard.t().onPressDo({hector.sembrarTrigo()})
+	//keyboard.o().onPressDo({hector.sembrarTomaco()})
  	game.addVisualCharacter(hector)
- 	game.addVisual(maiz)
+ 	//game.addVisual(maiz)
 	game.addVisual(trigo)
 	game.addVisual(tomaco)
  	
