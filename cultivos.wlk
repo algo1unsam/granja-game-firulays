@@ -1,6 +1,24 @@
-class Maiz {
-	method image() {
-		// TODO: hacer que devuelva la imagen que corresponde
-		return "corn_baby.png"
-	}
+import wollok.game.*
+
+class Cultivo
+{
+
 }
+
+class Maiz {
+	method image() = "corn_baby.png"
+
+	method position() = game.at(1, 8)
+}
+
+class Trigo
+{
+
+}
+
+class Tomaco
+{
+
+}
+
+const maiz = new Maiz()
