@@ -12,6 +12,8 @@ program farmville {
 	//  VISUALES
  	game.addVisualCharacter(hector)
  	game.addVisual(maiz)
+	game.addVisual(trigo)
+	game.addVisual(tomaco)
  	
  	//  COMIENZA
 	game.start()
