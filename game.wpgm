@@ -12,13 +12,14 @@ program farmville {
 	
 
 	//  VISUALES
-	keyboard.m().onPressDo({hector.sembrarMaiz()})
-	//keyboard.t().onPressDo({hector.sembrarTrigo()})
-	//keyboard.o().onPressDo({hector.sembrarTomaco()})
+	keyboard.m().onPressDo({hector.sembrarCultivo(new Maiz())})
+	keyboard.t().onPressDo({hector.sembrarCultivo(new Trigo())})
+	keyboard.o().onPressDo({hector.sembrarCultivo(new Tomaco())})
+	keyboard.r().onPressDo({hector.regar()})
  	game.addVisualCharacter(hector)
  	//game.addVisual(maiz)
-	game.addVisual(trigo)
-	game.addVisual(tomaco)
+	//game.addVisual(trigo)
+	//game.addVisual(tomaco)
  	
  	//  COMIENZA
 	game.start()

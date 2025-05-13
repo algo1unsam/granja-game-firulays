@@ -2,33 +2,31 @@ import wollok.game.*
 
 class Cultivo
 {
+	var property esRegable = true
+}
+
+class Maiz inherits Cultivo{
+	var property position = game.at(1, 8) 
+	var property image = "corn_baby.png"	
 
 }
 
-class Maiz {
-	method image() = "corn_baby.png"
-
-	method position() = game.at(1, 8)
-}
-
-class Trigo
+class Trigo inherits Cultivo
 {
-	method image() = "wheat_0.png"
-
-	method position() = game.at(1, 1)
-
+	var property position = game.at(1, 1)
+	var property image = "wheat_0.png"
 }
 
-class Tomaco
+class Tomaco inherits Cultivo
 {
-	method image() = "tomaco_baby.png"
-
-	method position() = game.at(8, 5)
-
+	var property position = game.at(8, 5)
+	var property image = "tomaco_baby.png"
 }
 
+/*
 const maiz = new Maiz()
 
 const trigo = new Trigo()
 
 const tomaco = new Tomaco()
+*/
